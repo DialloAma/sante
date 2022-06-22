@@ -1,0 +1,14 @@
+.home_page{
+    flex: 0.8;
+    background-color: #fcffff;
+}
+.statistique{
+    display: flex;
+   
+}
+.statistic2{
+    display: flex;
+}
+.code_bar{
+    margin: 10px;
+}

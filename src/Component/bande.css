@@ -1,0 +1,30 @@
+.bande{
+    flex: 0.8;
+    background-color: #179CBC;
+    display: flex;
+    border-radius: 5px;
+    margin: 5px;
+    justify-content: space-between;
+}
+.logo{
+    border-radius: 50px;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    height: 70px;
+}
+.body{
+    margin-top: 10px;
+}
+.band_left{
+    display: flex;
+}
+.flash{
+    margin: 20px;
+}
+.bouton{
+    display: flex;
+    align-items: center;
+    
+    
+}

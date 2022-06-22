@@ -1,0 +1,35 @@
+.admincontainer{
+    flex: 0.8;
+    height: 100vh;
+    background: rgb(214, 210, 210);
+    align-items: center;
+    
+}
+.contenu{
+    background: white;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.input-item{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(204, 197, 197);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10px;
+
+    
+}
+.input-item>input{
+    border: none;
+    outline: none;
+    background-color:rgb(204, 197, 197);
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+   
+    
+}

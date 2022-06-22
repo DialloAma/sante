@@ -1,0 +1,16 @@
+.Rech_container{
+    flex: 0.8;
+    background: rgb(214, 210, 210);
+}
+.top{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.search{
+    background-color: white;
+    margin: 30px;
+    
+    width: 30%;
+}
