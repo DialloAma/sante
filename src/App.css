@@ -1,4 +1,19 @@
 .App{
   display: flex;
-  width: 100%;
+  
 }
+/*@media (max-width:768px) {
+  .side_bar {
+    width: 300px;
+    left: -300px;
+    position: fixed;
+    
+}
+.home_page {
+  width:100%;
+  background-color: #fcffff;
+  margin-left: 0px;
+  display: inline-block;
+}
+  
+}*/

@@ -63,21 +63,21 @@ const dat = {
       'rgb(54, 162, 235)',
       'rgb(255, 205, 86)'
     ],
-    
+    borderWidth:2,
   }]
 };
 function StatisticMedecin() {
   return (
     <div className='Medecin'>
             <div className='titlemede'>
-           <h3 style={{color: '#179CBC'}}>Medecin Par Region</h3>
+           <h3 style={{color: '#179CBC',fontWeight:'bold'}}>MEDECIN PAR REGION</h3>
            <Form.Select style={{width:'25%',height:'40px',background:'transparent'}}>
           <option >Select</option>
         </Form.Select>
            </div>
            
            
-          <Doughnut data={dat}   />
+          <Doughnut data={dat} options={{cutout:'80%',borderWidth:'50px',responsive:'true'}}   />
           {/*<PieChart width={500} height={500}>
           <Pie data={dat} dataKey="name" outerRadius={250} innerRadius={150} fill="green" />
   </PieChart>*/}

@@ -9,28 +9,19 @@ import RechercheDoctor from './Pages/RechercheDoctor';
 import Bande from './Component/Bande';
 
 function App() {
-  return (
-    <div className='App'>
+  return(
+     <Router >
+      <div className='App'>
       <SideBar/>
-       
-       <Home/>
-    
-    {/*<Router >
-       <TopBar/>
-       <div className='container'>
-       <SideBar/>
-       <Routes>
-       <Route path='/' element={<Home/>}/>
+      <Routes>
+       <Route exact path='/' element={<Home/>}/>
        <Route path='/AjoutAdmin' element={<AjoutAdmin/>}/>
-       
-        
+       <Route path='/SerachMedecin' element={<RechercheDoctor/>}/>
        </Routes>
-       </div>
-      
-       
-  </Router>*/}
   </div>
+     </Router>
   );
+  
 }
 
 export default App;

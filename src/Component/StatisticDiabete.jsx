@@ -75,16 +75,18 @@ const data = [
 
 function StatisticDiabete() {
   return (
+    
     <div className="diabete">
       <div className="title">
         <h3 style={{color: '#179CB1',fontSize:'40px',fontWeight:'bold'}}>EVOLUTION DU DIABETE</h3>
-        <Form.Select style={{width:'20%',height:'40px',background:'transparent'}}>
+        <Form.Select style={{width:'20%',height:'40px',background:'transparent',marginRight:'10px'}}>
           <option >Select</option>
         </Form.Select>
       </div>
+      <div className='diagrame'>
       <ResponsiveContainer  width="100%"   aspect={4 / 1}>
         <LineChart  data={data}>
-          <XAxis dataKey="name" />
+          <XAxis dataKey="name"  />
           <YAxis height="100%" />
           <Tooltip />
           <Legend />
@@ -97,7 +99,10 @@ function StatisticDiabete() {
           <Line type="monotone" dataKey="Décès" stroke="red" />
         </LineChart>
       </ResponsiveContainer>
+      </div>
+      
     </div>
+    
   )
 }
 

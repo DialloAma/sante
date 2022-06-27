@@ -1,35 +1,59 @@
-import React from 'react'
+import React from "react";
 import PersonIcon from "@mui/icons-material/Person";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import LoginIcon from "@mui/icons-material/Login";
-import './ajoutadmin.css'
+import "./ajoutadmin.css";
+import TopBar from "../Component/TopBar/TopBar";
+/*import Box from '@mui/material/Box';
+import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import TextField from '@mui/material/TextField';
+import AccountCircle from '@mui/icons-material/AccountCircle';*/
 
 function AjoutAdmin() {
   return (
-    <div className='admincontainer'>
-        <div className='contenu'>
-            <h2 style={{marginLeft:'30%',color:'#179CB1'}}>AJOUT ADMIN</h2>
-            <div className="input-item">
-        <PersonIcon />
-        <input type="text" placeholder="Nom" />
-        </div>
-        <div className="input-item">
-        <PersonIcon />
-        <input type="text" placeholder="Prenom" />
-        </div>
-        <div className="input-item">
-        <LoginIcon />
-        <input type="text" placeholder="Login" />
-        </div>
-         <div className="input-item">
-        <LockOpenIcon />
-        <input type="password" placeholder="Password" />
-         </div>
-         <button style={{background:'#179CB1',marginLeft:'30%',width:'40%',padding:'10px',color:'white',fontSize:'25px'}} >Ajouter</button>
-        </div>
+    <div className="admincontainer">
+      <TopBar />
+      <div className="loginforme">
+        <form>
+          <h1 style={{ marginLeft: "40px",marginTop:'20px',marginBottom:'7px' }}>AJOUTER UN ADMIN</h1>
+          <div className="input-item">
+            <PersonIcon style={{ backgroundColor: "rgb(204, 197, 197)" }} />
+            <input type="text" placeholder="Nom" />
+          </div>
+          <div className="input-item">
+            <PersonIcon style={{ backgroundColor: "rgb(204, 197, 197)" }} />
+            <input type="text" placeholder="Prenom" />
+          </div>
+          <div className="input-item">
+            <LoginIcon style={{ backgroundColor: "rgb(204, 197, 197)" }} />
+            <input type="text" placeholder="Login" />
+          </div>
+          <div className="input-item">
+            <LockOpenIcon style={{ backgroundColor: "rgb(204, 197, 197)" }} />
+            <input type="password" placeholder="Password" />
+          </div>
 
+          <button
+            style={{
+              background: "#179CB1",
+              marginLeft: "20px",
+              marginRight: "20px",
+              width: "90%",
+              padding: "5px",
+              color: "white",
+              fontSize: "20px",
+              marginBottom: "20px",
+            }}
+          >
+            Ajouter
+          </button>
+        </form>
+      </div>
     </div>
-  )
+  );
 }
 
-export default AjoutAdmin
+export default AjoutAdmin;

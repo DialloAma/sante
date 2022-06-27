@@ -60,20 +60,20 @@ function StatisticRegion() {
   return (
     <div className='region'>
     <div className='titlere'>
-       <h3 style={{color: '#179CBC'}}>Cas par Region</h3>
+       <h3 style={{color: '#179CBC',fontWeight:'bold'}}>CAS PAR REGION</h3>
        <Form.Select style={{width:'30%',height:'40px',background:'transparent'}}>
       <option >Select</option>
     </Form.Select>
     </div>
     <BarChart width={500} height={300} data={data}>
-<XAxis dataKey="name" stroke="#8884d8" />
-<YAxis />
-<Tooltip />
-<Legend />
-<CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-<Bar dataKey="Homme" fill="#179cbc" barSize={30} />
-<Bar dataKey="Femme" fill="#1fc4ee" barSize={30} />
-</BarChart>
+        <XAxis dataKey="name" stroke="#8884d8" />
+        <YAxis />
+       <Tooltip />
+       <Legend />
+       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+       <Bar dataKey="Homme" fill="#179cbc" barSize={30} />
+        <Bar dataKey="Femme" fill="#1fc4ee" barSize={30} />
+   </BarChart>
 
 </div>
   )
